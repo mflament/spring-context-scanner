@@ -1,5 +1,6 @@
 package org.yah.tools.spring.context.scanner;
 
+import guru.nidi.graphviz.model.Factory;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.yah.tools.spring.context.scanner.context.TestContextConfiguration;

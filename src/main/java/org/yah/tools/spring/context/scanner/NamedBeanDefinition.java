@@ -22,4 +22,12 @@ public record NamedBeanDefinition(String beanName, BeanDefinition definition) {
     public boolean isAbstract() {
         return definition.isAbstract();
     }
+
+    public String simpleClassName() {
+        String className = beanClassName();
+        int idx = className.lastIndexOf('.');
+        if (idx < 0)
+            return className;
+        return className.substring(idx + 1);
+    }
 }
